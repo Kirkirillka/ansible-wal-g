@@ -33,6 +33,7 @@
     include: "{{ walg_binary_extracted_name }}"
     extra_opts:
     - --transform
+    - '-z'
     - "{{ 's/^' + walg_binary_extracted_name + '$/wal-g/' }}"
     remote_src: true
     owner: root
